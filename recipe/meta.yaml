@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "1c5f87c358965ffe3c6043c0f4104451df7926dd1990efd5a2e402a2aecc5ef0" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "ece10841278a12523dc9cdcdead0f54c2932965c62c40ca23801cf6b281c43a4" %}
 
 package:
   name: {{ name|lower }}
@@ -14,12 +14,12 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - setuptools
