@@ -20,12 +20,15 @@ step toward breaking down the barriers to data sharing in neuroscience.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pynwb-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pynwb-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pynwb-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pynwb-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pynwb/badges/version.svg)](https://anaconda.org/conda-forge/pynwb)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pynwb/badges/downloads.svg)](https://anaconda.org/conda-forge/pynwb)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pynwb-green.svg)](https://anaconda.org/conda-forge/pynwb) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pynwb.svg)](https://anaconda.org/conda-forge/pynwb) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pynwb.svg)](https://anaconda.org/conda-forge/pynwb) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pynwb.svg)](https://anaconda.org/conda-forge/pynwb) |
 
 Installing pynwb
 ================
