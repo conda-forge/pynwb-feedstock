@@ -26,11 +26,10 @@ requirements:
     - pandas
     - h5py
     - numpy
-    - scipy
     - ruamel.yaml
     - python-dateutil
     - six
-    - requests
+    - chardet
     - hdmf
 
 test:
@@ -58,3 +57,4 @@ extra:
     - dorukozturk
     - jcfr
     - oruebel
+    - rly
