@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "1.0.2" %}
-{% set sha256 = "fed1f7ed0dac3de63e29f6a1335332c4bed8ab00a31d3a9bbd8965e44a652101" %}
+{% set version = "1.0.3" %}
+{% set sha256 = "7b5ef8d51b2a43c93bf03666d1e48dcdf3b143551aa582d86fb4f23d620a8fa9" %}
 
 package:
   name: {{ name|lower }}
@@ -26,11 +26,10 @@ requirements:
     - pandas
     - h5py
     - numpy
-    - scipy
     - ruamel.yaml
     - python-dateutil
     - six
-    - requests
+    - chardet
     - hdmf
 
 test:
@@ -58,3 +57,4 @@ extra:
     - dorukozturk
     - jcfr
     - oruebel
+    - rly
