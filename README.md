@@ -21,9 +21,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    
-    <td>All platforms:</td>
+<table><tr><td>All platforms:</td>
     <td>
       <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5703&branchName=master">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pynwb-feedstock?branchName=master">
@@ -129,4 +127,5 @@ Feedstock Maintainers
 * [@dorukozturk](https://github.com/dorukozturk/)
 * [@jcfr](https://github.com/jcfr/)
 * [@oruebel](https://github.com/oruebel/)
+* [@rly](https://github.com/rly/)
 
