@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "1.1.2" %}
-{% set sha256 = "35955986ab44849776809bcbb65880d5baed44aebaff5f0eb85eabc7b1c3a1f0" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "13be6514fc128be7fb0374a8a047ced35e1dc0f2948ffa305fcd67fb9829da8c" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
