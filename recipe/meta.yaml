@@ -23,14 +23,12 @@ requirements:
   run:
     - python
     - setuptools
-    - pandas
-    - h5py
-    - numpy
-    - ruamel.yaml
-    - python-dateutil
-    - six
-    - chardet
-    - hdmf 1.3.3
+    - h5py >=2.9
+    - hdmf 1.5.4,<2
+    - numpy >=1.16
+    - pandas >=0.23
+    - python-dateutil >=2.7
+    - ruamel.yaml >=0.15
 
 test:
   imports:
