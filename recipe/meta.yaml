@@ -12,7 +12,6 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -33,6 +32,11 @@ requirements:
 test:
   imports:
     - pynwb
+  source_files:
+    - test.py
+    - tests
+  commands:
+    - python ./test.py --pynwb
 
 about:
   home: https://github.com/NeurodataWithoutBorders/pynwb
