@@ -33,8 +33,11 @@ requirements:
 test:
   imports:
     - pynwb
+  source_files:
+    - test.py
+    - tests
   commands:
-    - ./test.py --pynwb
+    - python ./test.py --pynwb
 
 about:
   home: https://github.com/NeurodataWithoutBorders/pynwb
