@@ -14,10 +14,11 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: True  # [py<33]
 
 requirements:
   host:
-    - python >=3
+    - python
     - pip
   run:
     - python
