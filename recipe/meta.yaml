@@ -14,10 +14,11 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: True  # [py<33]
 
 requirements:
-  build:
-    - python >=3
+  host:
+    - python
     - pip
   run:
     - python
@@ -36,7 +37,7 @@ test:
     - test.py
     - tests
   commands:
-    - python ./test.py --pynwb
+    - python ./test.py
 
 about:
   home: https://github.com/NeurodataWithoutBorders/pynwb
