@@ -37,7 +37,7 @@ test:
     - test.py
     - tests
   commands:
-    - python ./test.py --pynwb
+    - python ./test.py
 
 about:
   home: https://github.com/NeurodataWithoutBorders/pynwb
