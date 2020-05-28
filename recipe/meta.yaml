@@ -24,7 +24,7 @@ requirements:
     - python
     - setuptools
     - h5py >=2.9
-    - hdmf >=1.6.1,<2
+    - hdmf >=1.6.2,<2
     - numpy >=1.16
     - pandas >=0.23
     - python-dateutil >=2.7
