@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "6a46f29d5b30a0cc5f9c2935d870f5b7f7bdcd77393fec307b04c92539b2a9ca" %}
+{% set version = "2.5.1" %}
+{% set sha256 = "e9c38ee0e41723d6c3e7b6af31ee4145481f4485e6a9a553c07b220bf5e43da0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<33]
 
