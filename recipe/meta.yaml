@@ -12,17 +12,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [py<33]
+  skip: True  # [py<37]
 
 requirements:
   host:
     - python
     - pip
   run:
-    - python >=3.7
+    - python
     - setuptools
     - h5py >=2.9,<4
     - hdmf >=3.1.1,<4
