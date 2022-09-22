@@ -38,7 +38,7 @@ test:
   requires:
     - pip
   commands:
-    - python ./test.py
+    # - python ./test.py
     - pip check
 
 about:
