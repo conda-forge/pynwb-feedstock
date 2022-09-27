@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "c22c96dd255e69cee1835057d741613d52c2ea1c45b6a1ef7f87ebaa8a5055ad" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "9cb27ccd733ecd4e50c60309da9d787710bd9aa258bd2eda336ea6368957e349" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   skip: True  # [py<37]
 
 requirements:
@@ -35,8 +35,11 @@ test:
   source_files:
     - test.py
     - tests
+  requires:
+    - pip
   commands:
-    - python ./test.py
+    # - python ./test.py
+    - pip check
 
 about:
   home: https://github.com/NeurodataWithoutBorders/pynwb
