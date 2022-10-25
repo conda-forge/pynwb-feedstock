@@ -9,14 +9,11 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynwb-feedstock
 
 Summary: A Python API for working with Neurodata stored in the NWB Format
 
-Documentation: http://pynwb.readthedocs.io/en/latest/
+Documentation: http://pynwb.readthedocs.io/
 
-Neurophysiology (NWB:N) is a project to develop a unified data format for
-cellular-based neurophysiology data, focused on the dynamics of groups of
-neurons measured under a large range of experimental conditions.
-The NWB:N team consists of neuroscientists and software developers
-who recognize that adoption of a unified data format is an important
-step toward breaking down the barriers to data sharing in neuroscience.
+PyNWB is a Python package for working with NWB files. It provides a
+high-level API for efficiently working with neurodata stored in the
+NWB format.
 
 
 Current build status

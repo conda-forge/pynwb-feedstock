@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "2.0.1" %}
-{% set sha256 = "9cb27ccd733ecd4e50c60309da9d787710bd9aa258bd2eda336ea6368957e349" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "53161341ff970a99de4f362e7b16034b9661797ad7ed65e062649cc6655f350b" %}
 
 package:
   name: {{ name|lower }}
@@ -23,9 +23,9 @@ requirements:
   run:
     - python
     - setuptools
-    - h5py >=2.9,<4
-    - hdmf >=3.1.1,<4
-    - numpy >=1.16,<1.22
+    - h5py >=2.10,<4
+    - hdmf >=3.3.2,<4
+    - numpy >=1.16,<1.23
     - pandas >=1.0.5,<2
     - python-dateutil >=2.7,<3
 
@@ -47,13 +47,10 @@ about:
   license_file: license.txt
   summary: A Python API for working with Neurodata stored in the NWB Format
   description: |
-    Neurophysiology (NWB:N) is a project to develop a unified data format for
-    cellular-based neurophysiology data, focused on the dynamics of groups of
-    neurons measured under a large range of experimental conditions.
-    The NWB:N team consists of neuroscientists and software developers
-    who recognize that adoption of a unified data format is an important
-    step toward breaking down the barriers to data sharing in neuroscience.
-  doc_url: http://pynwb.readthedocs.io/en/latest/
+    PyNWB is a Python package for working with NWB files. It provides a
+    high-level API for efficiently working with neurodata stored in the
+    NWB format. 
+  doc_url: http://pynwb.readthedocs.io/
 
 extra:
   recipe-maintainers:
