@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "2.2.0" %}
-{% set sha256 = "7a1a08688237cd7ff41daa43b625903b3068f7327a928d379b1c43bbdf37555d" %}
+{% set version = "2.3.1" %}
+{% set sha256 = "c6981cfdb9a6b62e7094f84eff98ee34e91354ed9d26802e47b4e90594d13159" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: True  # [py<37]
 
@@ -57,9 +57,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - ajtritt
     - bendichter
-    - dorukozturk
-    - jcfr
     - oruebel
     - rly
+    - mavaylon1
