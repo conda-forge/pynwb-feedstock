@@ -15,17 +15,16 @@ build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: True  # [py<37]
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python
+    - python >=3.8
     - pip
   run:
-    - python
+    - python >=3.8
     - setuptools
     - h5py >=2.10
     - hdmf >=3.4.4
