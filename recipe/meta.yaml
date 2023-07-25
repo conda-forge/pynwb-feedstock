@@ -12,9 +12,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 1
-  script: {{ PYTHON }} -m pip install . -vv
-  skip: True  # [py<37]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  entry_points:
+    - validate_hdmf_spec = hdmf.testing.validate_spec:main
 
 requirements:
   build:
@@ -24,25 +26,25 @@ requirements:
     - python
     - pip
   run:
-    - python
+    - python >= 3.8
     - setuptools
     - h5py >=2.10
-    - hdmf >=3.4.4
+    - hdmf >=3.5.4
     - numpy >=1.16
     - pandas >=1.1.5
     - python-dateutil >=2.7.3
 
 test:
+  source_files:
+    - tests
+    - test.py
   imports:
     - pynwb
-  source_files:
-    - test.py
-    - tests
   requires:
     - pip
   commands:
-    # - python ./test.py
     - pip check
+    - python ./test.py
 
 about:
   home: https://github.com/NeurodataWithoutBorders/pynwb
