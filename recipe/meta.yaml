@@ -24,7 +24,7 @@ requirements:
     - python
     - pip
   run:
-    - python >= 3.8
+    - python >=3.8
     - setuptools
     - h5py >=2.10
     - hdmf >=3.5.4
