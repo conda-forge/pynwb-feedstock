@@ -15,8 +15,6 @@ build:
   noarch: python
   number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  entry_points:
-    - validate_hdmf_spec = hdmf.testing.validate_spec:main
 
 requirements:
   build:
