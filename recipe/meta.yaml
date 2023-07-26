@@ -43,7 +43,7 @@ test:
     - coverage
   commands:
     - pip check
-    - python ./test.py
+    - python ./test.py -p -i -b -f -e -r
 
 about:
   home: https://github.com/NeurodataWithoutBorders/pynwb
