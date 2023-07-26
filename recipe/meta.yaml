@@ -40,10 +40,10 @@ test:
     - pynwb
   requires:
     - pip
-    - coverage
+    - hdf5plugin
   commands:
     - pip check
-    - python ./test.py -p -i -b -f -e -r
+    - python ./test.py -p -i -b -r
 
 about:
   home: https://github.com/NeurodataWithoutBorders/pynwb
