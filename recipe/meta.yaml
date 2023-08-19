@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "2.4.0" %}
-{% set sha256 = "499a434448522280513384fb244bc45e751fbafa192f8d9784db8b0d5b395df9" %}
+{% set version = "2.5.0" %}
+{% set sha256 = "4010bb946e8b9ec50733e7569207702af663bcd8edafcae96e2c66e53ae573d6" %}
 
 package:
   name: {{ name|lower }}
@@ -12,9 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
-  skip: True  # [py<37]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -24,25 +24,27 @@ requirements:
     - python
     - pip
   run:
-    - python
+    - python >=3.8
     - setuptools
     - h5py >=2.10
-    - hdmf >=3.8.0
+    - hdmf >=3.9.0
     - numpy >=1.16
     - pandas >=1.1.5
     - python-dateutil >=2.7.3
 
 test:
-  imports:
-    - pynwb
-  source_files:
-    - test.py
-    - tests
   requires:
     - pip
+    - hdf5plugin
+    - pytest
+  source_files:
+    - tests
+    - test.py
+  imports:
+    - pynwb
   commands:
-    # - python ./test.py
     - pip check
+    - python ./test.py -p -i -b -r
 
 about:
   home: https://github.com/NeurodataWithoutBorders/pynwb
