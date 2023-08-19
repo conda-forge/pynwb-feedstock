@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "2.3.2" %}
-{% set sha256 = "ccb53c5b8fe1b722d3dffffd439a266d53cdb4b4271c7d3ca2608798e90cb7b7" %}
+{% set version = "2.4.0" %}
+{% set sha256 = "499a434448522280513384fb244bc45e751fbafa192f8d9784db8b0d5b395df9" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,7 @@ requirements:
     - python >=3.8
     - setuptools
     - h5py >=2.10
-    - hdmf >=3.5.4
+    - hdmf >=3.8.0
     - numpy >=1.16
     - pandas >=1.1.5
     - python-dateutil >=2.7.3
