@@ -33,14 +33,15 @@ requirements:
     - python-dateutil >=2.7.3
 
 test:
+  requires:
+    - pip
+    - hdf5plugin
+    - pytest
   source_files:
     - tests
     - test.py
   imports:
     - pynwb
-  requires:
-    - pip
-    - hdf5plugin
   commands:
     - pip check
     - python ./test.py -p -i -b -r
