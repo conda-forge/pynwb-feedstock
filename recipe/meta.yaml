@@ -23,6 +23,8 @@ requirements:
   host:
     - python
     - pip
+    - hatchling
+    - hatch-vcs
   run:
     - python >=3.8
     - setuptools
