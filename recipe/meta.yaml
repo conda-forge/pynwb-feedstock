@@ -29,8 +29,8 @@ requirements:
     - python >=3.8
     - setuptools
     - h5py >=2.10
-    - hdmf >=3.9.0
-    - numpy >=1.16
+    - hdmf >=3.14.0
+    - numpy >=1.18,<2.0
     - pandas >=1.1.5
     - python-dateutil >=2.7.3
 
@@ -65,3 +65,4 @@ extra:
     - oruebel
     - rly
     - mavaylon1
+    - stephprince
