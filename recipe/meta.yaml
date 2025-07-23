@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "3.1.0" %}
-{% set sha256 = "f659dcf5a8b18d3b7382c1883bc63d4a2f243b1e8a45ba911f8478191cf99998" %}
+{% set version = "3.1.1" %}
+{% set sha256 = "1cd3f611899115944ebb5bb2e183dc5e1d129bdef937bcf67cf550e69cdbf535" %}
 {% set python_min = "3.9" %}
 
 package:
