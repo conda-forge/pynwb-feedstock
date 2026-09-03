@@ -1,6 +1,6 @@
 {% set name = "pynwb" %}
-{% set version = "4.1.0" %}
-{% set sha256 = "2d2672ba467826e61b14d9518866e75b6d2925ddc23c30672309bf7644ea0ed0" %}
+{% set version = "4.2.0" %}
+{% set sha256 = "681e86b73cf21fc607003936ac9e575efdb64d3d01001bfa351862d40f9b5e7e" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -28,7 +28,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - h5py >=3.6.0
-    - hdmf >=6.1.0,<7
+    - hdmf >=6.2.0,<7
     - numpy >=1.24.0
     - pandas >=1.4.0
     - python-dateutil >=2.8.2
